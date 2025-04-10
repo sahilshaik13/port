@@ -45,27 +45,27 @@ export default function About() {
           >
             <h3 className="text-2xl font-bold mb-4 text-cyan-400">Hello there!</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              I'm Alex Nova, a passionate full-stack developer with over 5 years of experience creating innovative
-              digital solutions. My journey in tech began when I built my first website at 15, and I've been hooked ever
-              since.
-            </p>
+            Aspiring Software Engineer | Web Development Enthusiast
+            I am currently pursuing a Bachelor of Engineering in Computer Science with a specialization in IoT, Cyber Security, and Blockchain Technology at Nawab Shah Alam Khan College of Engineering and Technology, Malakpet. My academic journey, coupled with a strong passion for web development, drives my commitment to excellence in creating innovative and user-friendly solutions.            </p>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              I specialize in creating immersive web experiences that combine cutting-edge technology with intuitive
-              design. My approach focuses on building scalable, efficient applications that solve real-world problems
-              while providing exceptional user experiences.
+            I take pride in my dedication to continuous learning and skill development, ensuring that I stay updated with industry trends and technologies. My effective time management allows me to balance academic commitments, personal projects, and hobbies, demonstrating my ability to prioritize and deliver results in high-pressure environments.
             </p>
             <p className="text-gray-300 mb-8 leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or
-              mentoring aspiring developers. I believe in continuous learning and pushing the boundaries of what's
-              possible in web development.
+            I possess a versatile skill set, including expertise in programming languages like C, Python, and JavaScript, and proficiency in frameworks such as Django, Flask, and React. My technical arsenal also includes tools like GitHub, Postman, AI assistants, and database management systems like MongoDB and MySQL. I excel in integrating APIs and deploying projects using platforms like Vercel and Netlify, showcasing my ability to transform concepts into impactful applications.
             </p>
-
+            <p className="text-gray-300 mb-8 leading-relaxed">
+            Beyond academics, I enjoy playing snookers, table tennis, badminton, and swimming. I’m an avid follower of cricket and Formula 1 racing, which fuels my competitive and analytical spirit.
+            </p>
+            <p className="text-gray-300 mb-8 leading-relaxed">
+            With a focus on professional growth and innovation, I am dedicated to contributing to cutting-edge projects and expanding my expertise in the ever-evolving field of computer science and web development.
+            </p>
+{/* 
             <Button
               className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white border-none"
               size="lg"
             >
               <Download className="mr-2 h-4 w-4" /> Download Resume
-            </Button>
+            </Button> */}
           </motion.div>
         </div>
       </div>

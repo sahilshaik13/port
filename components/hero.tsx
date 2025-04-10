@@ -11,12 +11,12 @@ export default function Hero() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="block">Hi, I'm</span>
             <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-              Alex Nova
+              Mohammed Shaik Sahil
             </span>
           </h1>
 
           <h2 className="text-xl md:text-2xl text-gray-300 mb-8">
-            <span className="typing-text">Full Stack Developer | UI/UX Designer | Tech Enthusiast</span>
+            <span className="typing-text">Full Stack Developer | Deployment Specialist | Tech Enthusiast</span>
           </h2>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

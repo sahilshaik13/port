@@ -43,7 +43,7 @@ export default function Navbar() {
           href="#home"
           className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent"
         >
-          NOVA<span className="text-white">DEV</span>
+          Mohammed Shaik Sahil
         </Link>
 
         {isMobile ? (

@@ -22,15 +22,15 @@ export default function Skills() {
     { name: "Node.js", level: 87, color: "from-green-500 to-emerald-400" },
     { name: "Express", level: 85, color: "from-gray-600 to-gray-400" },
     { name: "MongoDB", level: 80, color: "from-green-600 to-green-400" },
-    { name: "PostgreSQL", level: 78, color: "from-blue-700 to-blue-500" },
-    { name: "GraphQL", level: 75, color: "from-pink-600 to-pink-400" },
+    { name: "Django", level: 78, color: "from-blue-700 to-blue-500" },
+    { name: "Flask", level: 75, color: "from-red-600 to-red-400" },
   ]
 
   const otherSkills: Skill[] = [
     { name: "UI/UX Design", level: 88, color: "from-purple-600 to-purple-400" },
     { name: "Git/GitHub", level: 92, color: "from-orange-600 to-orange-400" },
-    { name: "Docker", level: 75, color: "from-blue-600 to-blue-400" },
-    { name: "AWS", level: 70, color: "from-yellow-600 to-yellow-400" },
+    { name: "Vercel", level: 92, color: "from-orange-600 to-orange-400" },
+    { name: "Postman", level: 85, color: "from-gray-600 to-gray-400" },
     { name: "Testing", level: 78, color: "from-red-600 to-red-400" },
   ]
 
@@ -158,16 +158,12 @@ export default function Skills() {
           className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 text-center"
         >
           <div className="bg-gray-900/30 border border-gray-800 rounded-lg p-6 hover:border-cyan-500/50 transition-all duration-300">
-            <div className="text-4xl font-bold text-cyan-400 mb-2">5+</div>
+            <div className="text-4xl font-bold text-cyan-400 mb-2">1+</div>
             <div className="text-gray-300">Years Experience</div>
           </div>
           <div className="bg-gray-900/30 border border-gray-800 rounded-lg p-6 hover:border-cyan-500/50 transition-all duration-300">
-            <div className="text-4xl font-bold text-purple-400 mb-2">50+</div>
+            <div className="text-4xl font-bold text-purple-400 mb-2">10+</div>
             <div className="text-gray-300">Projects Completed</div>
-          </div>
-          <div className="bg-gray-900/30 border border-gray-800 rounded-lg p-6 hover:border-cyan-500/50 transition-all duration-300">
-            <div className="text-4xl font-bold text-cyan-400 mb-2">20+</div>
-            <div className="text-gray-300">Happy Clients</div>
           </div>
           <div className="bg-gray-900/30 border border-gray-800 rounded-lg p-6 hover:border-cyan-500/50 transition-all duration-300">
             <div className="text-4xl font-bold text-purple-400 mb-2">10+</div>
