@@ -158,7 +158,7 @@ export default function Skills() {
           className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 text-center"
         >
           <div className="bg-gray-900/30 border border-gray-800 rounded-lg p-6 hover:border-cyan-500/50 transition-all duration-300">
-            <div className="text-4xl font-bold text-cyan-400 mb-2">1+</div>
+            <div className="text-4xl font-bold text-cyan-400 mb-2">2+</div>
             <div className="text-gray-300">Years Experience</div>
           </div>
           <div className="bg-gray-900/30 border border-gray-800 rounded-lg p-6 hover:border-cyan-500/50 transition-all duration-300">

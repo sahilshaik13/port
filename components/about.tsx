@@ -30,8 +30,8 @@ export default function About() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative h-[400px] w-full md:h-[500px] rounded-lg overflow-hidden border-2 border-cyan-500/30">
-              <Image src="/placeholder.svg?height=500&width=500" alt="Alex Nova" fill className="object-cover" />
+            <div className="relative h-[350px] w-full md:h-[450px] rounded-lg overflow-hidden border-2 border-cyan-500/30">
+              <Image src="images/sa1.jpg" alt="Mohammed Shaik Sahil" fill className="object-cover object-top" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
             </div>
             <div className="absolute -bottom-5 -right-5 h-full w-full border-2 border-purple-500/30 rounded-lg -z-10"></div>

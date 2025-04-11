@@ -25,23 +25,56 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setSubmitSuccess(true)
-      setFormData({ name: "", email: "", subject: "", message: "" })
-
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+  
+    const telegramBotToken = process.env.NEXT_PUBLIC_TELEGRAM_BOT_TOKEN;
+    const chatId = process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID;
+  
+    if (!telegramBotToken || !chatId) {
+      console.error("Telegram credentials not configured properly");
+      alert("Configuration error. Please try again later.");
+      setIsSubmitting(false);
+      return;
+    }
+  
+    const messageText = `New Contact Form Submission:\n\nName: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\nMessage: ${formData.message}`;
+  
+    try {
+      const response = await fetch(
+        `https://api.telegram.org/bot${telegramBotToken}/sendMessage`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            chat_id: chatId,
+            text: messageText,
+          }),
+        }
+      );
+  
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+  
+      setSubmitSuccess(true);
+      setFormData({ name: "", email: "", subject: "", message: "" });
+  
       // Reset success message after 5 seconds
       setTimeout(() => {
-        setSubmitSuccess(false)
-      }, 5000)
-    }, 1500)
-  }
-
+        setSubmitSuccess(false);
+      }, 5000);
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert("There was an error submitting your form. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+  
   return (
     <section id="contact" className="py-20 bg-black">
       <div className="container mx-auto px-4">
@@ -79,8 +112,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-white">Email</h4>
-                  <p className="text-gray-300">alex@novadev.com</p>
-                  <p className="text-gray-300">contact@novadev.com</p>
+                  <p className="text-gray-300">mdshaiksahil0510@gmail.com</p>
+                  <p className="text-gray-300">appignitelearning@outlook.com</p>
                 </div>
               </div>
 
@@ -90,28 +123,17 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-white">Phone</h4>
-                  <p className="text-gray-300">+1 (555) 123-4567</p>
-                  <p className="text-gray-300">+1 (555) 987-6543</p>
+                  <p className="text-gray-300">+91 93471 51331</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="bg-gray-900 p-3 rounded-lg">
-                  <MapPin className="h-6 w-6 text-purple-400" />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-white">Location</h4>
-                  <p className="text-gray-300">San Francisco, California</p>
-                  <p className="text-gray-300">United States</p>
-                </div>
-              </div>
             </div>
 
             <div className="mt-10">
               <h3 className="text-xl font-bold mb-4 text-white">Follow Me</h3>
               <div className="flex gap-4">
                 <a
-                  href="#"
+                  href="https://www.github.com/sahilshaik13"
                   className="bg-gray-900 p-3 rounded-full hover:bg-cyan-900/50 transition-colors"
                   aria-label="GitHub"
                 >
@@ -124,7 +146,7 @@ export default function Contact() {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/mdshaiksahil"
                   className="bg-gray-900 p-3 rounded-full hover:bg-cyan-900/50 transition-colors"
                   aria-label="LinkedIn"
                 >
@@ -133,16 +155,7 @@ export default function Contact() {
                   </svg>
                 </a>
                 <a
-                  href="#"
-                  className="bg-gray-900 p-3 rounded-full hover:bg-cyan-900/50 transition-colors"
-                  aria-label="Twitter"
-                >
-                  <svg className="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                  </svg>
-                </a>
-                <a
-                  href="#"
+                  href="https://www.instagram.com/sahil_shaikz"
                   className="bg-gray-900 p-3 rounded-full hover:bg-cyan-900/50 transition-colors"
                   aria-label="Instagram"
                 >

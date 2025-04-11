@@ -17,33 +17,33 @@ export default function Achievements() {
   const achievements: Achievement[] = [
     {
       id: 1,
-      year: "2023",
-      title: "Tech Innovator Award",
+      year: "2025",
+      title: "Established an Enterprise",
       description:
-        "Recognized for developing an AI-powered accessibility tool that helps visually impaired users navigate websites more effectively.",
+        "Established AppIgnite Learning Enterprise, visioning the build the upcoming future generations towards technology and development.",
       icon: <Trophy className="h-8 w-8 text-yellow-400" />,
     },
     {
       id: 2,
-      year: "2022",
-      title: "Senior Developer at TechNova",
+      year: "2024",
+      title: "Open-Source Contributor",
       description:
-        "Promoted to lead the frontend development team, managing a team of 5 developers and implementing new coding standards.",
+        "Started to build projects and contributed it to Open-source such as GitHub.",
       icon: <Briefcase className="h-8 w-8 text-blue-400" />,
     },
     {
       id: 3,
-      year: "2021",
-      title: "Open Source Contributor Award",
+      year: "2023",
+      title: "High School from TSBIE",
       description:
-        "Recognized for significant contributions to React ecosystem, with over 500 commits to various open-source projects.",
+        "Completed my Intermediate from Sri Chaitanya Junior College, Tarnaka., with a focus on Mathematics, Physics and Chemistry.",
       icon: <Award className="h-8 w-8 text-green-400" />,
     },
     {
       id: 4,
-      year: "2020",
-      title: "Master's Degree in Computer Science",
-      description: "Graduated with honors, specializing in Human-Computer Interaction and Advanced Web Technologies.",
+      year: "2021",
+      title: "Matriculation from SSC",
+      description: "Completed Matriculation from St. Peter's Model School, Hyderabad.",
       icon: <GraduationCap className="h-8 w-8 text-purple-400" />,
     },
   ]
