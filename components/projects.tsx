@@ -64,7 +64,7 @@ export default function Projects() {
         "OpenRouter API",
         "Meta-llama AI",
       ],
-      liveUrl: "Not Available",
+      liveUrl: "https://www.linkedin.com/posts/mdshaiksahil_mindmate-ai-is-a-comprehensive-mental-activity-7296039850909081600-mZu6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmy1uoBdFTfkHNgKkMyt6yIJqmocXmvcy4",
       githubUrl: "https://github.com/sahilshaik13/MIND-APP",
     },
   ];
