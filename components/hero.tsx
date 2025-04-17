@@ -16,7 +16,8 @@ export default function Hero() {
           </h1>
 
           <h2 className="text-xl md:text-2xl text-gray-300 mb-8">
-            <span className="typing-text">Full Stack Developer | Deployment Specialist | Tech Enthusiast</span>
+            <span className="">Full Stack Developer | Deployment Specialist</span>
+            <span className="typing-text"> | Tech Enthusiast</span>
           </h2>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
