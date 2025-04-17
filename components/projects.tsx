@@ -21,8 +21,10 @@ export default function Projects() {
     {
       id: 1,
       title: "Attendance Management System",
-      description: "An attendance management system made using Django and MongoDB for efficient attendance tracking & management.",
-      video: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7278691386139271168?compact=1",
+      description:
+        "An attendance management system made using Django and MongoDB for efficient attendance tracking & management.",
+      video:
+        "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7278691386139271168?compact=1",
       tags: ["Django", "MongoDB", "HTML CSS JS", "Django AUTH", "GitHub"],
       liveUrl: "Not Available",
       githubUrl: "https://github.com/sahilshaik13/attendance.git",
@@ -30,7 +32,8 @@ export default function Projects() {
     {
       id: 2,
       title: "Full Stack Website For The Literary Club NSAKCET",
-      description: "A modern website for The Literary Club NSAKCET made by Wordpress.",
+      description:
+        "A modern website for The Literary Club NSAKCET made by Wordpress.",
       video: "https://theliteraryclubnsakcet.in/",
       tags: ["Wordpress", "Designing"],
       liveUrl: "https://theliteraryclubnsakcet.in/",
@@ -39,7 +42,8 @@ export default function Projects() {
     {
       id: 3,
       title: "Full Stack Website For The Literary Club NSAKCET MUN'24",
-      description: "A modern website for The Literary Club NSAKCET MUN'24 for NSAKCET MUN'24",
+      description:
+        "A modern website for The Literary Club NSAKCET MUN'24 for NSAKCET MUN'24",
       video: "https://nsakcetmun.theliteraryclubnsakcet.in/index.html",
       tags: ["HTML", "CSS", "JS", "GitHub", "Canva"],
       liveUrl: "https://nsakcetmun.theliteraryclubnsakcet.in/index.html",
@@ -48,7 +52,8 @@ export default function Projects() {
     {
       id: 4,
       title: "MindMate AI: Your AI-Powered Mental Health Companion",
-      description: "MindMate AI is a comprehensive mental health application developed to assess and assist users with depression, anxiety, and stress (DAS) based on the DASS-21 model. It provides personalized recommendations and insights to support mental well-being.",
+      description:
+        "MindMate AI is a comprehensive mental health application developed to assess and assist users with depression, anxiety, and stress (DAS) based on the DASS-21 model. It provides personalized recommendations and insights to support mental well-being.",
       video: "",
       tags: [
         "Django",
@@ -104,7 +109,8 @@ export default function Projects() {
         </motion.div>
 
         <div className="relative">
-          <div className="hidden md:flex absolute top-1/2 -left-4 transform -translate-y-1/2 z-10">
+          {/* Previous Button */}
+          <div className="absolute top-1/2 -left-4 transform -translate-y-1/2 z-10">
             <Button
               variant="outline"
               size="icon"
@@ -116,7 +122,8 @@ export default function Projects() {
             </Button>
           </div>
 
-          <div className="hidden md:flex absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
+          {/* Next Button */}
+          <div className="absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
             <Button
               variant="outline"
               size="icon"
@@ -128,6 +135,7 @@ export default function Projects() {
             </Button>
           </div>
 
+          {/* Projects Slider */}
           <div className="overflow-hidden">
             <motion.div
               className="flex transition-all duration-500 ease-in-out"
