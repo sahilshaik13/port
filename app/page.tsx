@@ -7,6 +7,7 @@ import Achievements from "@/components/achievements"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
 import ParticleBackground from "@/components/particle-background"
+import Enterprise from "@/components/enterprise";
 
 export default function Home() {
   return (
@@ -20,10 +21,11 @@ export default function Home() {
           <Projects />
           <Skills />
           <Achievements />
+          <Enterprise /> {/* Adding the enterprise section here */}
           <Contact />
         </main>
         <Footer />
       </div>
     </div>
-  )
+  );
 }
