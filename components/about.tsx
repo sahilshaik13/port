@@ -95,6 +95,23 @@ export default function About() {
               expertise in the ever-evolving field of computer science and web
               development.
             </p>
+          
+            {/* Download CV Button */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="flex justify-center mt-6"
+            >
+              <a
+                href="/Mohammed Shaik Sahil CV.pdf"
+                download
+                className="inline-block bg-gradient-to-r from-cyan-400 to-purple-500 text-white px-6 py-3 rounded-lg font-semibold transition hover:scale-105"
+              >
+                Download CV
+              </a>
+            </motion.div>
           </motion.div>
         </div>
       </div>
