@@ -4,7 +4,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
+import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react"; 
+import { FaLinkedin } from "react-icons/fa"; // Import LinkedIn icon from react-icons
 
 interface Project {
   id: number;
@@ -14,6 +15,7 @@ interface Project {
   tags: string[];
   liveUrl: string;
   githubUrl: string;
+  linkedinUrl?: string; // Optional LinkedIn URL
 }
 
 export default function Projects() {
@@ -25,9 +27,10 @@ export default function Projects() {
         "An attendance management system made using Django and MongoDB for efficient attendance tracking & management.",
       video:
         "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7278691386139271168?compact=1",
-      tags: ["Django", "MongoDB", "HTML CSS JS", "Django AUTH", "GitHub"],
+      tags: ["Django", "MongoDB", "HTML CSS JS", "Django AUTH", "GitHub", "LinkedIn"],
       liveUrl: "Not Available",
       githubUrl: "https://github.com/sahilshaik13/attendance.git",
+      linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7278691386139271168/",
     },
     {
       id: 2,
@@ -38,6 +41,7 @@ export default function Projects() {
       tags: ["Wordpress", "Designing"],
       liveUrl: "https://theliteraryclubnsakcet.in/",
       githubUrl: "Not Available",
+      linkedinUrl: "https://www.linkedin.com/posts/mdshaiksahil_the-literary-club-nsakcet-linkedin-activity-7253620878519750656-JDfB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmy1uoBdFTfkHNgKkMyt6yIJqmocXmvcy4",
     },
     {
       id: 3,
@@ -48,24 +52,27 @@ export default function Projects() {
       tags: ["HTML", "CSS", "JS", "GitHub", "Canva"],
       liveUrl: "https://nsakcetmun.theliteraryclubnsakcet.in/index.html",
       githubUrl: "https://github.com/sahilshaik13/mun_website",
+      linkedinUrl: "https://www.linkedin.com/posts/mdshaiksahil_im-happy-to-share-this-full-stack-website-activity-7265179448973418498-K01e?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmy1uoBdFTfkHNgKkMyt6yIJqmocXmvcy4",
     },
     {
       id: 4,
-      title: "MindMate AI: Your AI-Powered Mental Health Companion",
+      title: "Serenity Space: Your AI-Powered Mental Health Companion",
       description:
-        "MindMate AI is a comprehensive mental health application developed to assess and assist users with depression, anxiety, and stress (DAS) based on the DASS-21 model. It provides personalized recommendations and insights to support mental well-being.",
-      video: "",
+        "Serenity Space is a comprehensive mental health care application designed to support individuals in managing anxiety, stress, and depression. The platform uses assessments, journaling, AI-based recommendations, and chatbot interactions to provide a holistic mental well-being experience.",
+      video: "https://serenity-space-ten.vercel.app/",
       tags: [
+        "Next.js",
         "Django",
-        "MongoDB",
+        "Supabase",
         "HTML CSS JS",
-        "Django AUTH",
+        "Supabase AUTH",
         "GitHub",
         "OpenRouter API",
         "Meta-llama AI",
       ],
-      liveUrl: "https://www.linkedin.com/posts/mdshaiksahil_mindmate-ai-is-a-comprehensive-mental-activity-7296039850909081600-mZu6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmy1uoBdFTfkHNgKkMyt6yIJqmocXmvcy4",
-      githubUrl: "https://github.com/sahilshaik13/MIND-APP",
+      liveUrl: "https://serenity-space-ten.vercel.app/",
+      githubUrl: "https://github.com/sahilshaik13/serenityspace.git",
+      linkedinUrl: "https://www.linkedin.com/posts/mdshaiksahil_serenity-space-document-activity-7333052821853917185-qT-b?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmy1uoBdFTfkHNgKkMyt6yIJqmocXmvcy4",
     },
   ];
 
@@ -208,6 +215,21 @@ export default function Projects() {
                             <Github className="mr-2 h-4 w-4" /> Code
                           </a>
                         </Button>
+                        {project.linkedinUrl && (  // Check if linkedinUrl exists
+                          <Button
+                            variant="outline"
+                            className="border-blue-500 text-blue-400 hover:bg-blue-950/30"
+                            asChild
+                          >
+                            <a
+                              href={project.linkedinUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <FaLinkedin className="mr-2 h-4 w-4" /> LinkedIn
+                            </a>
+                          </Button>
+                        )}
                       </div>
                     </CardContent>
                   </Card>
