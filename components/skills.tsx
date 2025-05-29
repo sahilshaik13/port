@@ -20,7 +20,7 @@ export default function Skills() {
 
   const backendSkills: Skill[] = [
     { name: "Node.js", level: 87, color: "from-green-500 to-emerald-400" },
-    { name: "Express", level: 85, color: "from-gray-600 to-gray-400" },
+    { name: "Supabase", level: 85, color: "from-gray-600 to-gray-400" },
     { name: "MongoDB", level: 80, color: "from-green-600 to-green-400" },
     { name: "Django", level: 78, color: "from-blue-700 to-blue-500" },
     { name: "Flask", level: 75, color: "from-red-600 to-red-400" },
