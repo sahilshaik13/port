@@ -32,30 +32,26 @@ export default function Projects() {
       githubUrl: "https://github.com/sahilshaik13/attendance.git",
       linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7278691386139271168/",
     },
-    {
+        {
       id: 2,
-      title: "Full Stack Website For The Literary Club NSAKCET",
+      title: "Django-Based Course Registration Platform with Payment Gateway - AppIgnite Learning Enterprise",
       description:
-        "A modern website for The Literary Club NSAKCET made by Wordpress.",
-      video: "https://theliteraryclubnsakcet.in/",
-      tags: ["Wordpress", "Designing"],
-      liveUrl: "https://theliteraryclubnsakcet.in/",
-      githubUrl: "Not Available",
-      linkedinUrl: "https://www.linkedin.com/posts/mdshaiksahil_the-literary-club-nsakcet-linkedin-activity-7253620878519750656-JDfB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmy1uoBdFTfkHNgKkMyt6yIJqmocXmvcy4",
+        "Developed a comprehensive full-stack registration system to facilitate seamless course enrollment, integrating a secure payment gateway using Razorpay. Designed an admin panel for efficient management of user registrations and structured data handling.",
+      video: "https://aile.vercel.app/ ",
+      tags: [
+        "Next.js",
+        "Django",
+        "Supabase",
+        "HTML CSS JS",
+        "Supabase AUTH",
+        "GitHub",
+        "Telegram Bot API",
+      ],
+      liveUrl: "https://aile.vercel.app/",
+      githubUrl: "https://github.com/sahilshaik13/aile-registrations.git",
     },
     {
       id: 3,
-      title: "Full Stack Website For The Literary Club NSAKCET MUN'24",
-      description:
-        "A modern website for The Literary Club NSAKCET MUN'24 for NSAKCET MUN'24",
-      video: "https://nsakcetmun.theliteraryclubnsakcet.in/index.html",
-      tags: ["HTML", "CSS", "JS", "GitHub", "Canva"],
-      liveUrl: "https://nsakcetmun.theliteraryclubnsakcet.in/index.html",
-      githubUrl: "https://github.com/sahilshaik13/mun_website",
-      linkedinUrl: "https://www.linkedin.com/posts/mdshaiksahil_im-happy-to-share-this-full-stack-website-activity-7265179448973418498-K01e?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmy1uoBdFTfkHNgKkMyt6yIJqmocXmvcy4",
-    },
-    {
-      id: 4,
       title: "Serenity Space: Your AI-Powered Mental Health Companion",
       description:
         "Serenity Space is a comprehensive mental health care application designed to support individuals in managing anxiety, stress, and depression. The platform uses assessments, journaling, AI-based recommendations, and chatbot interactions to provide a holistic mental well-being experience.",
@@ -73,6 +69,23 @@ export default function Projects() {
       liveUrl: "https://serenity-space-ten.vercel.app/",
       githubUrl: "https://github.com/sahilshaik13/serenityspace.git",
       linkedinUrl: "https://www.linkedin.com/posts/mdshaiksahil_serenity-space-document-activity-7333052821853917185-qT-b?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEmy1uoBdFTfkHNgKkMyt6yIJqmocXmvcy4",
+    },
+    {
+      id: 4,
+      title: "Path Pilot – AI Career Guidance Platform",
+      description:
+        "Built Path Pilot, an AI-powered career navigation app designed to help users discover, build, and progress along a personalized career path. The platform assists users in selecting domains of interest, adjusting skill levels, and following structured, AI-guided roadmaps for professional growth.",
+      video: "https://path-pilot-tau.vercel.app/",
+      tags: [
+        "Next.js",
+        "Supabase",
+        "Supabase AUTH",
+        "GitHub",
+        "OpenRouter API",
+        "Meta-llama AI",
+      ],
+      liveUrl: "https://path-pilot-tau.vercel.app/",
+      githubUrl: "https://github.com/sahilshaik13/PathPilot.git",
     },
   ];
 

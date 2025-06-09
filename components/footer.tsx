@@ -10,7 +10,7 @@ export default function Footer() {
           </div>
 
           <div className="text-center md:text-left mb-4 md:mb-0">
-            <p className="text-gray-400 text-sm">&copy; {new Date().getFullYear()} AppIgnite Learning Ent. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">&copy; {new Date().getFullYear()} Mohammed Shaik Sahil. All rights reserved.</p>
           </div>
 
           <div className="flex space-x-4">
@@ -36,6 +36,18 @@ export default function Footer() {
                   clipRule="evenodd"
                 />
               </svg>
+            </a>
+            <a
+              href="https://www.cloudskillsboost.google/public_profiles/2f353227-bf66-417b-a030-18fedc7b4e59"
+              className="text-gray-400 hover:text-cyan-400 transition-colors flex items-center justify-center"
+              aria-label="Google Cloud"
+            >
+              <img
+                src="/logos/google-cloud.png"
+                alt="Google Cloud"
+                className="h-5 w-5 object-contain"
+                style={{ display: "block" }}
+              />
             </a>
           </div>
         </div>

@@ -15,21 +15,21 @@ interface Achievement {
 
 export default function Achievements() {
   const achievements: Achievement[] = [
-    {
-      id: 1,
-      year: "2025",
-      title: "Established an Enterprise",
-      description:
-        "Established AppIgnite Learning Enterprise, visioning the build the upcoming future generations towards technology and development.",
-      icon: <Trophy className="h-8 w-8 text-yellow-400" />,
-    },
-    {
-      id: 2,
-      year: "2024",
-      title: "Open-Source Contributor",
-      description:
-        "Started to build projects and contributed it to Open-source such as GitHub.",
-      icon: <Briefcase className="h-8 w-8 text-blue-400" />,
+    { 
+      id: 1, 
+      year: "2024", 
+      title: "Full Stack Developer & Open-Source Contributor", 
+      description: 
+        "Became a proficient full stack developer while actively contributing to open-source projects and communities.", 
+      icon: <Trophy className="h-8 w-8 text-yellow-400" />, 
+    }, 
+    { 
+      id: 2, 
+      year: "2023", 
+      title: "Started Engineering (B.E)", 
+      description: 
+        "Began studying Bachelor of Engineering at Nawab Shah Alam Khan College of Engineering and Technology, embarking on a journey in technology and development.", 
+      icon: <Briefcase className="h-8 w-8 text-blue-400" />, 
     },
     {
       id: 3,

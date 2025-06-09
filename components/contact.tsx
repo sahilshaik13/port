@@ -113,7 +113,6 @@ export default function Contact() {
                 <div>
                   <h4 className="text-lg font-semibold text-white">Email</h4>
                   <p className="text-gray-300">mdshaiksahil0510@gmail.com</p>
-                  <p className="text-gray-300">appignitelearning@outlook.com</p>
                 </div>
               </div>
 
@@ -166,6 +165,18 @@ export default function Contact() {
                       clipRule="evenodd"
                     />
                   </svg>
+                </a>
+                <a
+                  href="https://www.cloudskillsboost.google/public_profiles/2f353227-bf66-417b-a030-18fedc7b4e59"
+                  className="bg-gray-900 p-3 rounded-full hover:bg-cyan-900/50 transition-colors flex items-center justify-center"
+                  aria-label="Google Cloud"
+                >
+                  <img
+                    src="/logos/google-cloud.png"
+                    alt="Google Cloud"
+                    className="h-5 w-5 object-contain"
+                    style={{ display: "block" }}
+                  />
                 </a>
               </div>
             </div>
