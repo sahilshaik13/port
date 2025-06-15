@@ -170,6 +170,24 @@ export default function Skills() {
             <div className="text-gray-300">Technologies</div>
           </div>
         </motion.div>
+
+        {/* Certificates Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="mt-10 flex justify-center"
+        >
+          <a
+            href="https://certificate-platform.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-400 to-purple-500 text-white font-semibold shadow-lg hover:from-purple-500 hover:to-cyan-400 transition-all duration-300"
+          >
+            View My Certificates
+          </a>
+        </motion.div>
       </div>
     </section>
   )
